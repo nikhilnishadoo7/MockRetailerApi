@@ -74,6 +74,8 @@ dotnet add package Swashbuckle.AspNetCore
 # Run Project
 
 ```bash
+dotnet clean
+dotnet build
 dotnet run
 ```
 
