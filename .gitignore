@@ -1,0 +1,15 @@
+# Remove .vs from git tracking
+git rm -r --cached .vs
+
+# Create/update .gitignore
+@"
+.vs/
+bin/
+obj/
+"@ | Out-File -Encoding utf8 .gitignore
+
+# Add files again
+git add .
+
+# Commit
+git commit -m "Initial commit"
